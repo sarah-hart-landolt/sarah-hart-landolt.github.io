@@ -473,7 +473,7 @@ circle {
 
 .section-inner {
     background-color: #fff;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     box-shadow: 0px 14px 28px rgba(134, 151, 168, 0.08);
 }
 
