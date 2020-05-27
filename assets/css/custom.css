@@ -27,3 +27,16 @@ img {
 .cardContainerTech{
     padding: 10px;
 }
+
+.logoImg{
+    width: 150px;
+}
+
+.section {
+    background-color: #ffff;
+}
+
+.infoContainer{
+    display: flex;
+    align-items: center;
+}
