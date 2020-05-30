@@ -14,9 +14,10 @@
 	<!-- Vendor Css-->
 	<link rel="stylesheet" href="assets/css/vendor.css" />
 	<link rel="stylesheet" href="assets/css/LineIcons.min.css" />
-	<link rel="stylesheet" href="assets/css/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/photoswipe.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/default-skin.min.css" />
+
 
 	<!-- Settings style Css -->
 	<link href="assets/css/settings.css" rel="stylesheet">
@@ -36,6 +37,13 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
+	 <!-- Start Loader -->
+	 <div class="section-loader">
+		<div class="loader">
+			<div></div>
+			<div></div> 
+		</div>
+	</div>
 
 	<!-- Setting Panel -->
 	<!-- <div class="settings_panel">
@@ -136,12 +144,6 @@
 							<a class="nav-link ripple" href="#resume">
 								<i class="lni-graduation"></i>
 								<span>resume</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link ripple" href="#blog">
-								<i class="lni-pencil"></i>
-								<span>Blog</span>
 							</a>
 						</li>
 						<li class="nav-item">
@@ -291,7 +293,8 @@
 									</div>
 									<div class="col-lg-6">
 										<div class="about-desc-info">
-											<b>Email : </b><a href="mailto:sarah.hart.landolt@gmail.com">sarah.hart.landolt@gmail.com</a>
+											<b>Email : </b><a
+												href="mailto:sarah.hart.landolt@gmail.com">sarah.hart.landolt@gmail.com</a>
 										</div>
 									</div>
 
@@ -301,37 +304,141 @@
 					</div>
 				</div>
 
-				
+
 		</section>
 		<!-- START: SERVICES -->
 		<section class="section section-dark section-services" id="services">
 			<div class="container">
 				<div class="section-head">
 					<span>WHAT I DO</span>
-					<h2>Technologies I've Worked With</h2>
+					<h2>Technologies I Use</h2>
 				</div>
+
+				<div class="row service-wrap">
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-1.png" alt="img">
+							<div class="service-content">
+								<h3>GitHub</h3>
+								<p>Source code version control with GitHub. Project management with Github Projects
+									&amp; Issue
+									tracking.</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-2.png" alt="img">
+							<div class="service-content">
+								<h3>C Sharp</h3>
+								<p>Experienced in the use of C# including the building of web applications, and APIs
+								</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-3.png" alt="img">
+							<div class="service-content">
+								<h3>JavaScript</h3>
+								<p>JavaScript fundamentals as well as experience building single page vanilla JS
+									applications. </p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-4.png" alt="img">
+							<div class="service-content">
+								<h3>ReactJS</h3>
+								<p>Experience in the creation of single page applications using the ReactJS library.</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img class="techImageIcon"
+								src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/vsc.png" alt="img">
+							<div class="service-content">
+								<h3>Visual Studio Code</h3>
+								<p>Experience Coding & live-coding share with VSCode</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-6.png" alt="img">
+							<div class="service-content">
+								<h3>HTML 5</h3>
+								<p>Well versed in the use of HTML 5 syntax for static web/app design.</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-7.png" alt="img">
+							<div class="service-content">
+								<h3>CSS 3</h3>
+								<p>Thoroughly enjoy employing my artistic and aesthetic gifts with the styling tools of
+									CSS.</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-8.png" alt="img">
+							<div class="service-content">
+								<h3>Bootstrap</h3>
+								<p>Equally enjoy the UI/UX styling and design through Bootstrap and Reactstrap.</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pd-15">
+						<div class="service-box">
+							<img src="http://www.mothedev.com/img/s-icon-5.png" alt="img">
+							<div class="service-content">
+								<h3>Dot Net</h3>
+								<p>Experience with ADO.Net, ASP.net, Entity and Identity frameworks, and MVC.</p>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
 				<section class="mh-skills" id="mh-skills">
 					<div class="container">
 						<div class="row section-separator">
 							<div>
 
-								<div class="section-inner p-0 p-md-5">
+
+								<!-- <div class="section-inner p-0 p-md-5">
 									<div class="row">
 
 
-									</div>
+									</div> -->
 
-									<section class="mh-skills" id="mh-skills">
-										<div class="container">
-											<div class="row section-separator">
-												<div>
-													<div class="mh-skills-inner">
-														<div class="mh-professional-skill wow fadeInUp"
-															data-wow-duration="0.8s" data-wow-delay="0.3s"
-															style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
-															<div class="each-skills">
-																<div class="technologiesContainer">
-																	<div class="cardContainerTech">
+								<section class="mh-skills" id="mh-skills">
+									<div class="container">
+										<div class="row section-separator">
+											<div>
+												<div class="mh-skills-inner">
+													<div class="mh-professional-skill wow fadeInUp"
+														data-wow-duration="0.8s" data-wow-delay="0.3s"
+														style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;">
+														<div class="each-skills">
+															<div class="technologiesContainer">
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage"
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/javascript.png"
 																			alt="JavaScript Icon">
@@ -342,14 +449,14 @@
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/reactJS.png"
 																			alt="React Icon">
 																		<div class="technologyText">React JS</div>
-																	</div>
-																	<div class="cardContainerTech">
+																	</div> -->
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage"
 																			src="https://cdn.auth0.com/blog/native-csharp/logo.png"
 																			alt="C# Icon">
 																		<div class="technologyText">C#</div>
-																	</div>
-																	<div class="cardContainerTech">
+																	</div> -->
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage" 0
 																			src="https://www.pngitem.com/pimgs/m/480-4800151_visual-studio-2019-for-mac-logo-visual-studio.png"
 																			alt="Visual Studio Icon">
@@ -360,14 +467,14 @@
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/git.png"
 																			alt="Git Icon">
 																		<div class="technologyText">Git</div>
-																	</div>
-																	<div class="cardContainerTech">
+																	</div> -->
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage"
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/github.png"
 																			alt="GitHub Icon">
 																		<div class="technologyText">GitHub</div>
-																	</div>
-																	<div class="cardContainerTech">
+																	</div> -->
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage"
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/html5.png"
 																			alt="HTML5 Icon">
@@ -384,8 +491,8 @@
 																			src="https://react.semantic-ui.com/logo.png"
 																			alt="Semantic UI Icon">
 																		<div class="technologyText">Semantic UI</div>
-																	</div>
-																	<div class="cardContainerTech">
+																	</div> -->
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage"
 																			src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png"
 																			alt="Bootstrap Icon">
@@ -396,8 +503,8 @@
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/webpack.png"
 																			alt="Webpack Icon">
 																		<div class="technologyText">Webpack</div>
-																	</div>
-																	<div class="cardContainerTech">
+																	</div> -->
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage"
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/npm.png"
 																			alt="NPM Icon">
@@ -408,129 +515,130 @@
 																			src="https://img-a.udemycdn.com/course/750x422/1606046_4127_2.jpg"
 																			alt="SQL Icon">
 																		<div class="technologyText">SQL</div>
-																	</div>
-																	<div class="cardContainerTech">
+																	</div> -->
+																<!-- <div class="cardContainerTech">
 																		<img class="techImage"
 																			src="https://nss-day-cohort-34.github.io/Class-Website/images/techs/vsc.png"
 																			alt="VSCode Icon">
 																		<div class="technologyText">Visual Studio Code
 																		</div>
-																	</div>
+																	</div> -->
 
 
-																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</section>
-									<div class="col-sm-6 col-lg-10 services-list">
-
-
-
 									</div>
-								</div>
-								<br>
+									
+								</section>
 								<div class="section-head">
 									<h2>Skills</h2>
 								</div>
-								<div class="section-inner p-0 p-md-5">
-									<div class="row">
-										<div class="col-sm-6 col-lg-6">
-											<div class="services-list b-box p-4 mt-4 ">
-												<div class="list-icon list-icon-1">
-													<i class="lni-color-pallet"></i>
-												</div>
-												<div class="mt-4">
-													<h5 class="mb-0">Graphic Design</h5>
-													<p class=" mt-3">Modern and mobile-ready website that will help of
-														your
-														marketing. Proin laoreet elementum ligula, ac tincidunt lorem
-														accumsan nec.
-													</p>
-												</div>
+								<div class="col-sm-6 col-lg-10 services-list">
+
+
+
+								</div>
+							</div>
+
+							<div class="section-inner p-0 p-md-5">
+								<div class="row">
+									<div class="col-sm-6 col-lg-6">
+										<div class="services-list b-box p-4 mt-4 ">
+											<div class="list-icon list-icon-1">
+												<i class="lni-color-pallet"></i>
+											</div>
+											<div class="mt-4">
+												<h5 class="mb-0">Graphic Design</h5>
+												<p class=" mt-3">Modern and mobile-ready website that will help of
+													your
+													marketing. Proin laoreet elementum ligula, ac tincidunt lorem
+													accumsan nec.
+												</p>
 											</div>
 										</div>
-										<div class="col-sm-6 col-lg-6">
-											<div class="services-list b-box p-4 mt-4 ">
-												<div class="list-icon list-icon-2">
-													<i class="lni-laptop-phone"></i>
-												</div>
-												<div class="mt-4">
-													<h5 class="mb-0">Web Development</h5>
-													<p class=" mt-3">Modern and mobile-ready website that will help of
-														your
-														marketing. Proin laoreet elementum ligula, ac tincidunt lorem
-														accumsan nec.
-													</p>
-												</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="services-list b-box p-4 mt-4 ">
+											<div class="list-icon list-icon-2">
+												<i class="lni-laptop-phone"></i>
+											</div>
+											<div class="mt-4">
+												<h5 class="mb-0">Web Development</h5>
+												<p class=" mt-3">Modern and mobile-ready website that will help of
+													your
+													marketing. Proin laoreet elementum ligula, ac tincidunt lorem
+													accumsan nec.
+												</p>
 											</div>
 										</div>
-										<div class="col-sm-6 col-lg-6">
-											<div class="services-list b-box p-4 mt-4 ">
-												<div class="list-icon list-icon-3">
-													<i class="lni-video"></i>
-												</div>
-												<div class="mt-4">
-													<h5 class="mb-0">Media Marketing</h5>
-													<p class=" mt-3">Modern and mobile-ready website that will help of
-														your
-														marketing. Proin laoreet elementum ligula, ac tincidunt lorem
-														accumsan nec.
-													</p>
-												</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="services-list b-box p-4 mt-4 ">
+											<div class="list-icon list-icon-3">
+												<i class="lni-video"></i>
+											</div>
+											<div class="mt-4">
+												<h5 class="mb-0">Media Marketing</h5>
+												<p class=" mt-3">Modern and mobile-ready website that will help of
+													your
+													marketing. Proin laoreet elementum ligula, ac tincidunt lorem
+													accumsan nec.
+												</p>
 											</div>
 										</div>
-										<div class="col-sm-6 col-lg-6">
-											<div class="services-list b-box p-4 mt-4 ">
-												<div class="list-icon list-icon-4">
-													<i class="lni-network"></i>
-												</div>
-												<div class="mt-4">
-													<h5 class="mb-0">Advetising</h5>
-													<p class=" mt-3">Modern and mobile-ready website that will help of
-														your
-														marketing. Proin laoreet elementum ligula, ac tincidunt lorem
-														accumsan nec.
-													</p>
-												</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="services-list b-box p-4 mt-4 ">
+											<div class="list-icon list-icon-4">
+												<i class="lni-network"></i>
+											</div>
+											<div class="mt-4">
+												<h5 class="mb-0">Advetising</h5>
+												<p class=" mt-3">Modern and mobile-ready website that will help of
+													your
+													marketing. Proin laoreet elementum ligula, ac tincidunt lorem
+													accumsan nec.
+												</p>
 											</div>
 										</div>
-										<div class="col-sm-6 col-lg-6">
-											<div class="services-list b-box p-4 mt-4 ">
-												<div class="list-icon list-icon-5">
-													<i class="lni-game"></i>
-												</div>
-												<div class="mt-4">
-													<h5 class="mb-0">Game Development</h5>
-													<p class=" mt-3">Modern and mobile-ready website that will help of
-														your
-														marketing. Proin laoreet elementum ligula, ac tincidunt lorem
-														accumsan nec.
-													</p>
-												</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="services-list b-box p-4 mt-4 ">
+											<div class="list-icon list-icon-5">
+												<i class="lni-game"></i>
+											</div>
+											<div class="mt-4">
+												<h5 class="mb-0">Game Development</h5>
+												<p class=" mt-3">Modern and mobile-ready website that will help of
+													your
+													marketing. Proin laoreet elementum ligula, ac tincidunt lorem
+													accumsan nec.
+												</p>
 											</div>
 										</div>
-										<div class="col-sm-6 col-lg-6">
-											<div class="services-list b-box p-4 mt-4 ">
-												<div class="list-icon list-icon-6">
-													<i class="lni-bar-chart"></i>
-												</div>
-												<div class="mt-4">
-													<h5 class="mb-0">Analytics</h5>
-													<p class=" mt-3">Modern and mobile-ready website that will help of
-														your
-														marketing. Proin laoreet elementum ligula, ac tincidunt lorem
-														accumsan nec.
-													</p>
-												</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="services-list b-box p-4 mt-4 ">
+											<div class="list-icon list-icon-6">
+												<i class="lni-bar-chart"></i>
+											</div>
+											<div class="mt-4">
+												<h5 class="mb-0">Analytics</h5>
+												<p class=" mt-3">Modern and mobile-ready website that will help of
+													your
+													marketing. Proin laoreet elementum ligula, ac tincidunt lorem
+													accumsan nec.
+												</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 				</section>
 				<!-- END: SERVICES -->
 
@@ -541,15 +649,14 @@
 							<div class="col-6 col-md-4">
 								<div class="section-head">
 									<span>TAKE A LOOK AT</span>
-									<h2>My Works</h2>
+									<h2>My Projects</h2>
 								</div>
 							</div>
 							<div class="col-md-8">
 								<ul id="filter" class="filter mt-4">
 									<li class=" active" data-group="all">All</li>
-									<li class="" data-group="slideshow">Slideshow</li>
-									<li class="" data-group="video">Video</li>
-									<li class="" data-group="image">Image</li>
+									<li class="" data-group="JavaScript">JavaScript</li>
+									<li class="" data-group="React">React</li>
 								</ul>
 							</div>
 						</div>
@@ -558,21 +665,23 @@
 							<div class="list-items-container row my-gallery">
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all slideshow">
-									<a href="assets/images/p4-4.jpg" itemprop="contentUrl" data-size="1024x1024">
-										<img src="assets/images/p4-4.jpg" itemprop="thumbnail"
+									data-groups="all React">
+									<a href="assets/images/FeelingHeartCapstone.png" itemprop="contentUrl" data-size="1024x1024">
+										<img src="assets/images/FeelingHeartCapstone.png" itemprop="thumbnail"
 											alt="Image description" />
+
 									</a>
 									<figcaption itemprop="caption description">
 										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Some work</h3>
-											<div class="portfolio-item-desc">Slideshow</div>
+												<h3 class="portfolio-item-title">Feeling Heart Capstone Project</h3>
+												<div class="portfolio-item-desc">React App to customize feeling charts with art</div>
+											</a>
 										</div>
 									</figcaption>
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all video">
+									data-groups="all React">
 									<a href="assets/images/nashville kennels.png" itemprop="contentUrl"
 										data-size="1024x1024">
 										<img src="assets/images/nashville kennels.png" itemprop="thumbnail"
@@ -587,7 +696,7 @@
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all slideshow">
+									data-groups="all JavaScript">
 									<a href="assets/images/nutshell.png" itemprop="contentUrl" data-size="1024x1024">
 										<img src="assets/images/nutshell.png" itemprop="thumbnail"
 											alt="nutshell website" />
@@ -601,7 +710,7 @@
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all image">
+									data-groups="all React">
 									<a href="assets/images/kandy korner.png" itemprop="contentUrl"
 										data-size="1024x1024">
 										<img src="assets/images/kandy korner.png" itemprop="thumbnail"
@@ -616,7 +725,7 @@
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all video">
+									data-groups="all JavaScript">
 									<a href="assets/images/3.png" itemprop="contentUrl" data-size="1024x1024">
 										<img src="assets/images/3.png" itemprop="thumbnail"
 											alt="3 blind mice website" />
@@ -630,7 +739,7 @@
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all image">
+									data-groups="all JavaScript">
 									<a href="assets/images/holidayroad.png" itemprop="contentUrl" data-size="1024x1024">
 										<img src="assets/images/holidayroad.png" itemprop="thumbnail"
 											alt="Image description" />
@@ -644,21 +753,21 @@
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all image">
+									data-groups="all JavaScript">
 									<a href="assets/images/glassdale.png" itemprop="contentUrl" data-size="1024x1024">
 										<img src="assets/images/glassdale.png" itemprop="thumbnail"
 											alt="Image description" />
 									</a>
 									<figcaption itemprop="caption description">
 										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Some work</h3>
-											<div class="portfolio-item-desc">image</div>
+											<h3 class="portfolio-item-title">Glassdale PD</h3>
+											<div class="portfolio-item-desc">JavaScript Project to help solve a crime</div>
 										</div>
 									</figcaption>
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all slideshow">
+									data-groups="all JavaScript">
 									<a href="assets/images/dailyjournal.png" itemprop="contentUrl"
 										data-size="1024x1024">
 										<img src="assets/images/dailyjournal.png" itemprop="thumbnail"
@@ -666,22 +775,22 @@
 									</a>
 									<figcaption itemprop="caption description">
 										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Some work</h3>
-											<div class="portfolio-item-desc">slideshow</div>
+											<h3 class="portfolio-item-title">Daily Journal</h3>
+											<div class="portfolio-item-desc">Javascript website for cataloging daily life of software development</div>
 										</div>
 									</figcaption>
 								</figure>
 
 								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all image">
+									data-groups="all JavaScript">
 									<a href="assets/images/aquarium.png" itemprop="contentUrl" data-size="1024x1024">
 										<img src="assets/images/aquarium.png" itemprop="thumbnail"
 											alt="Image description" />
 									</a>
 									<figcaption itemprop="caption description">
 										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Some work</h3>
-											<div class="portfolio-item-desc">image</div>
+											<h3 class="portfolio-item-title">Martin's Aquarium</h3>
+											<div class="portfolio-item-desc">JavaScript Project for Martin, fictional client</div>
 										</div>
 									</figcaption>
 								</figure>
@@ -811,7 +920,6 @@
 							<span>experience</span>
 							<h2>Resume</h2>
 						</div>
-
 						<div class="section-inner p-0 p-md-5">
 							<div class="section-resume-wrap">
 								<div class="section-experience mb-5">
@@ -826,52 +934,77 @@
 												<div class="resume-list b-box p-4 ">
 													<div class="row align-items-center">
 														<div class="col-3 col-md-3 pb-3 pb-md-0">
-															Google Inc.
+															Nashville Software School
 														</div>
-														<div class="col-md-5 pb-2 pb-md-0">
-															<h5 class="mb-3">Senior Architect</h5>
-															<p>Collaborate with creative and development teams on the
-																execution
-																of ideas.</p>
-														</div>
-														<div class="col-md-4 text-md-right">
+														<div class="col-md-8 pb-2 pb-md-0">
+															<h5 class="mb-3">Full Stack Software Developer</h5>
 															<h6 class="badge badge-primary">2015 - Present</h6>
-														</div>
+															<li>Built single-page applications in teams and individually
+																to create various CRUD web applications</li>
+															<li>Created Feeling Heart:  an individual front end capstone
+																in a 2 week sprint</li>
+															<li>Git and GitHub for version control, project management
+															</li>
+															<li>Practiced agile methodology/ participated in daily
+																stand-ups and sprint retrospectives</li>
+															<li>Experience in remote collaboration, learning,
+																problem-solving (via zoom, VS Code live-share, slack)
+															</li>
+															<li>Experience structuring workflow & wire-framing front end
+																projects</li>
+															<li>Application design through white-boarding dependencies
+																and building ERDs </li>
 
+
+														</div>
 													</div>
 												</div>
 												<div class="resume-list b-box p-4 ">
 													<div class="row align-items-center">
 														<div class="col-3 col-md-3 pb-3 pb-md-0">
-															Facebook.
+															Sarah Hart Art
 														</div>
-														<div class="col-md-5 pb-2 pb-md-0">
-															<h5 class="mb-3">Front-end Developer</h5>
-															<p>Collaborate with creative and development teams on the
-																execution
-																of ideas.</p>
+														<div class="col-md-8 pb-2 pb-md-0">
+															<h5 class="mb-3">Abstract Artist, Graphic Designer,
+																Photographer
+																<h6 class="badge badge-danger">2015 - present</h6>
+															</h5>
+															<li>Published "Feeling Heart" : a 16 emotions feelings chart
+																represented through abstract art (2019)</li>
+															<li>"Feeling Heart" painting lessons (my own artistic
+																technique honed over 6 years) </li>
+															<li>Provide painting lessons to businesses, organizations &
+																corporations for team-building exercises </li>
+															<li>Created album art for various Nashville musicians</li>
+															<li>"Feeling Heart" solo show (October-December 2019) at The
+																Browsing Room Gallery </li>
+															<li>"Emotional Landscapes" solo show (November 2019) at Lab
+																Canna </li>
+															<li>Group shows : The Gallery at Fort Houston, Fieldhouse
+																Jones, The Porch, Turnip Green </li>
 														</div>
-														<div class="col-md-4 text-md-right">
-															<h6 class="badge badge-success">2013 - 2015</h6>
-														</div>
-
 													</div>
 												</div>
 												<div class="resume-list b-box p-4 ">
 													<div class="row align-items-center">
 														<div class="col-3 col-md-3 pb-3 pb-md-0">
-															Envato.
+															University of Kentucky
 														</div>
-														<div class="col-md-5 pb-2 pb-md-0">
-															<h5 class="mb-3">UI Developer</h5>
-															<p>Collaborate with creative and development teams on the
-																execution
-																of ideas.</p>
+														<div class="col-md-8 pb-3 pb-md-0">
+															<h5 class="mb-3">French Instructor
+																<h6 class="badge badge-success">2015 - 2018</h6>
+															</h5>
+															<li>Taught 4 introductory French classes each semester</li>
+															<li>Responsible for around 100 students each semester</li>
+															<li>Recruited students to become French Majors or Minors
+															</li>
+															<li>Redesigned a 4th semester French language course
+																centered around the novel "The Little Prince" that has
+																continued to be taught by other TAs and FTIs</li>
+															<li>Created visually appealing content based on realia
+																(lesson plans, activities, quizzes)</li>
+															<li>Mentored first year French Teaching Assistants</li>
 														</div>
-														<div class="col-md-4 text-md-right">
-															<h6 class="badge badge-danger">2011 - 2013</h6>
-														</div>
-
 													</div>
 												</div>
 											</div>
@@ -879,61 +1012,67 @@
 									</div>
 								</div>
 
-								<div class="section-education">
-									<div class="row">
-										<div class="col-lg-3">
-											<h5 class="section-subHead mb-4">Education</h5>
-										</div>
+								<div class="section-inner p-0 p-md-5">
+									<div class="section-resume-wrap">
+										<div class="section-experience mb-5">
+											<div class="row">
+												<div class="col-lg-3">
+													<h5 class="section-subHead mb-4 ">Education</h5>
+												</div>
 
-										<div class="col-lg-9">
-											<div class="EducationList">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="resume-list b-box p-4 mb-4 ">
-															<div>
-																<h5>Full-Time Web Developer Bootcamp</h5>
-																<h6 class="badge badge-danger d-inline-block my-3">
-																	February 2020-August 2020
-																</h6>
-																<p>Collaborate with creative and development teams on
-																	the
-																	execution of ideas.</p>
+												<div class="col-lg-9">
+													<div class="ExperienceList pb-3">
+
+														<div class="resume-list b-box p-4 ">
+															<div class="row align-items-center">
+																<div class="col-3 col-md-3 pb-3 pb-md-0">
+																	Nashville Software School </div>
+																<div class="col-md-5 pb-2 pb-md-0">
+																	<h5 class="mb-3">Software Development, Certificate
+																	</h5>
+																	<p>Full-time 6-month intensive full stack software
+																		development bootcamp focused on front end (HTML,
+																		JavaScript, React) and back end (.NET, C#, SQL
+																		server) fundamentals with an emphasis on problem
+																		solving and working in teams.</p>
+																</div>
+																<div class="col-md-4 text-md-right">
+																	<h6 class="badge badge-primary">Feb 2020 -
+																		Present</h6>
+																</div>
+
 															</div>
 														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="resume-list b-box p-4 mb-4 ">
-															<div>
-																<h5>Master in Arts</h5>
-																<h6 class="badge badge-success d-inline-block my-3">
-																	2011-2013
-																</h6>
-																<p>French and Francophone Studies.</p>
+														<div class="resume-list b-box p-4 ">
+															<div class="row align-items-center">
+																<div class="col-3 col-md-3 pb-3 pb-md-0">
+																	University of Kentucky
+																</div>
+																<div class="col-md-5 pb-2 pb-md-0">
+																	<h5 class="mb-3">MA, French & Francophone Language,
+																		Culture, & Literature </h5>
+																	<p>4.0 GPA, Summa Cum Laude.</p>
+																</div>
+																<div class="col-md-4 text-md-right">
+																	<h6 class="badge badge-success">2011 - 2013</h6>
+																</div>
+
 															</div>
 														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="resume-list b-box p-4 mb-4 ">
-															<div>
-																<h5>Master in Arts</h5>
-																<h6 class="badge badge-light d-inline-block my-3">
-																	2006-2008</h6>
-																<p>Collaborate with creative and development teams on
-																	the
-																	execution of ideas.</p>
-															</div>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="resume-list b-box p-4 mb-4 ">
-															<div>
-																<h5>Art University</h5>
-																<h6 class="badge badge-primary d-inline-block my-3">
-																	2006-2008
-																</h6>
-																<p>Collaborate with creative and development teams on
-																	the
-																	execution of ideas.</p>
+														<div class="resume-list b-box p-4 ">
+															<div class="row align-items-center">
+																<div class="col-3 col-md-3 pb-3 pb-md-0">
+																	Murray State University
+																</div>
+																<div class="col-md-5 pb-2 pb-md-0">
+																	<h5 class="mb-3">BA, International Affairs & French
+																	</h5>
+																	<p>3.8 GPA, Summa Cum Laude.</p>
+																</div>
+																<div class="col-md-4 text-md-right">
+																	<h6 class="badge badge-danger">2011 - 2013</h6>
+																</div>
+
 															</div>
 														</div>
 													</div>
@@ -1109,7 +1248,7 @@
 							</div>
 						</div>
 					</div>
-				</section> 
+				</section>
 				<!-- END: CONTACT -->
 
 			</div>
@@ -1174,6 +1313,7 @@
 			<!-- JAVASCRIPTS -->
 
 			<script src="assets/js/vendor.js"></script>
+			<script src="assets/plugins/js/jquery.fancybox.min.js"></script>
 
 			<script src="assets/js/parallax.min.js"></script>
 			<script src="assets/js/photoswipe.min.js"></script>
