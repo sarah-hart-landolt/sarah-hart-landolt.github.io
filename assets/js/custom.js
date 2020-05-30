@@ -75,13 +75,13 @@
     //     }
     // });
 
-    // $(".simple-ajax-popup").fancybox({
-    //     'transitionIn'  :   'elastic',
-    //     'transitionOut' :   'elastic',
-    //     'speedIn'       :   600, 
-    //     'speedOut'      :   200, 
-    //     'overlayShow'   :   false
-    // });
+    $(".simple-ajax-popup").fancybox({
+        'transitionIn'  :   'elastic',
+        'transitionOut' :   'elastic',
+        'speedIn'       :   600, 
+        'speedOut'      :   200, 
+        'overlayShow'   :   false
+    });
 
     /* ---------------------------------------------- /*
     * Swipper - Init
@@ -186,6 +186,14 @@
         });
     });
 
+       /*
+    |=================
+    | fancybox
+    |================
+    */
+ 
+   $("[data-fancybox]").fancybox({});
+      
 
 
     /* ---------------------------------------------- /*
@@ -211,4 +219,34 @@
     // END: Switcher
 
 }(window.jQuery);
+
+/* Loader Code Start */
+$(window).on("load", function() { 
+    $(".section-loader").fadeOut("slow");
+    
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            queue: true
+        }
+    });
+ 
+    $('.portfolio-nav li').click(function(){
+        $('.portfolio-nav .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                queue: true
+            }
+         });
+         return false;
+    });
+  });
+/* Loader Code End */
+
+
 
