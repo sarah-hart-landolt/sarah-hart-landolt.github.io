@@ -14,7 +14,7 @@
 	<!-- Vendor Css-->
 	<link rel="stylesheet" href="assets/css/vendor.css" />
 	<link rel="stylesheet" href="assets/css/LineIcons.min.css" />
-    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/photoswipe.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/default-skin.min.css" />
 
@@ -37,11 +37,11 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
-	 <!-- Start Loader -->
-	 <div class="section-loader">
+	<!-- Start Loader -->
+	<div class="section-loader">
 		<div class="loader">
 			<div></div>
-			<div></div> 
+			<div></div>
 		</div>
 	</div>
 
@@ -180,7 +180,7 @@
 							<h1 class="my-4"> I'm <span class="typed"
 									data-elements="Sarah Hart Landolt., A Software Developer., An Abstract Artist."></span>
 							</h1>
-							<p>Software Developer.Artist.Designer.</p>
+							<p>Software Developer. Artist. Designer.</p>
 							<br>
 							<div class="infoContainer">
 								<img data-depth="0.4" class="logoImg" src="assets/images/SHL LOGO CODING1.png"
@@ -198,18 +198,32 @@
 										style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
 										<i class="fa fa-map-marker"></i>
 										<address>Nashville, TN, USA</address>
+										<ul class="about-desc-social">
+											<li class="list-inline-item"><a class="hover-state"
+													href="https://www.linkedin.com/in/sarah-hart-landolt/"><i
+														class="lni lni-linkedin-original"></i></a></li>
+											<li class="list-inline-item"><a class="hover-state"
+													href="https://github.com/sarah-hart-landolt"><i
+														class="lni lni-github"></i></a></li>
+											<li class="list-inline-item"><a class="hover-state"
+													href="sarahhartlandolt.com"><i class="lni lni-website"></i></a></li>
+											<li class="list-inline-item"><a class="hover-state"
+													href="https://www.facebook.com/sarahhartart/"><i
+														class="lni lni-facebook-filled"></i></a></li>
+										</ul>
 
 									</li>
 								</ul>
 							</div>
 
 							<div class="hero-right--btns my-4">
-								<a href="#contact" class="btn ripple">Hire Me</a>
-								<a href="" target="_blank" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s"
+								<a href="https://linkedin.com/" target="_blank" class="btn ripple">Learn More</a>
+								<a href="https://drive.google.com/file/d/1a7f6VXibP2zneM5Wv6S4Ht6cccaXyzTX/view?usp=sharing"
+									target="_blank" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s"
 									data-wow-delay="0.4s"
 									style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">Download
 									CV <i class="fa fa-download"></i></a>
-								<a target="_blank" href="https://linkedin.com/" class="btn btn-link">Learn More</a>
+								<!-- <a target="_blank" href="https://linkedin.com/" class="btn btn-link">Learn More</a> -->
 
 							</div>
 						</div>
@@ -238,18 +252,7 @@
 								<p class="mt-4 font-weight-light">I'm an extroverted, passionate software developer and abstract artist who enjoys painting with the magical tools of programming languages to render visually striking, artistically-driven web applications. After learning C# and .NET in the back end, I'm intrigued with the problem solving puzzles in SQL queries while also building RESTful APIs. After a decade of teaching language and a year transitioning into art full-time, I pursued software development to marry all my creative interests and channel the elements that make me thrive: creation, ideation, problem-solving, dynamism, challenge, mentorship and teamwork.</p>
 
 							</div>
-
-							<ul class="about-desc-social text-left my-4 list-unstyled list-inline">
-								<li class="list-inline-item"><a class="hover-state" href="#"><i
-											class="lni lni-facebook-filled"></i></a></li>
-								<li class="list-inline-item"><a class="hover-state" href="#"><i
-											class="lni lni-linkedin"></i></a></li>
-								<li class="list-inline-item"><a class="hover-state" href="#"><i
-											class="lni lni-stackoverflow"></i></a></li>
-								<li class="list-inline-item"><a class="hover-state" href="#"><i
-											class="lni lni-dribbble"></i></a></li>
-							</ul>
-
+							<br>
 							<div class="about-desc-more text-left">
 								<div class="row">
 									<div class="col-lg-6">
@@ -495,6 +498,24 @@
 								</ul>
 							</div>
 						</div>
+					</div>
+			</div> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-md-4">
+						<div class="section-head">
+							<span>TAKE A LOOK AT</span>
+							<h2>My Projects</h2>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<ul id="filter" class="filter mt-4">
+							<li class=" active" data-group="all">All</li>
+							<li class="" data-group="JavaScript">JavaScript</li>
+							<li class="" data-group="React">React</li>
+						</ul>
+					</div>
+				</div>
 
 						<div class="section-inner p-0 p-md-5">
 							<div class="list-items-container row my-gallery">
@@ -630,22 +651,128 @@
 										<img src="assets/images/aquarium.png" itemprop="thumbnail"
 											alt="Image description" />
 									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Martin's Aquarium</h3>
-											<div class="portfolio-item-desc">JavaScript Project for Martin, fictional client</div>
-										</div>
-									</figcaption>
-								</figure>
+									<button type="button" data-toggle="modal" data-target="#FeelingHeartModal"
+										class="btn btn-outline-secondary btn-lg" id="myBtn">Learn
+										More</button>
+								</div>
+							</figcaption>
+						</figure>
 
-							</div><!-- .projects-container -->
-						</div>
-					</div>
-				</section>
-				<!-- END: PORTFOLIO -->
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia" data-groups="all React">
+							<a href="assets/images/nashville kennels.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/nashville kennels.png" itemprop="thumbnail"
+									alt="nasvhille kennels website" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Nashville Kennels</h3>
+									<div class="portfolio-item-desc">React App</div>
+								</div>
+							</figcaption>
+						</figure>
 
-				<!-- START: TESTIMONY
-				<!-- <section class="section section-dark section-testimony" id="testimony">
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
+							data-groups="all JavaScript">
+							<a href="assets/images/nutshell.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/nutshell.png" itemprop="thumbnail" alt="nutshell website" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Nutshell Social Dashboard</h3>
+									<div class="portfolio-item-desc">JavaScript Wbsi</div>
+								</div>
+							</figcaption>
+						</figure>
+
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia" data-groups="all React">
+							<a href="assets/images/kandy korner.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/kandy korner.png" itemprop="thumbnail"
+									alt="Kandy Korner Website" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Kandy Korner</h3>
+									<div class="portfolio-item-desc">React</div>
+								</div>
+							</figcaption>
+						</figure>
+
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
+							data-groups="all JavaScript">
+							<a href="assets/images/3.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/3.png" itemprop="thumbnail" alt="3 blind mice website" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">3 Blind Mice Consulting</h3>
+									<div class="portfolio-item-desc">Javascript</div>
+								</div>
+							</figcaption>
+						</figure>
+
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
+							data-groups="all JavaScript">
+							<a href="assets/images/holidayroad.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/holidayroad.png" itemprop="thumbnail" alt="Image description" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Holiday Road</h3>
+									<div class="portfolio-item-desc">JavaScript Group Project</div>
+								</div>
+							</figcaption>
+						</figure>
+
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
+							data-groups="all JavaScript">
+							<a href="assets/images/glassdale.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/glassdale.png" itemprop="thumbnail" alt="Image description" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Glassdale PD</h3>
+									<div class="portfolio-item-desc">JavaScript Project to help solve a crime</div>
+								</div>
+							</figcaption>
+						</figure>
+
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
+							data-groups="all JavaScript">
+							<a href="assets/images/dailyjournal.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/dailyjournal.png" itemprop="thumbnail"
+									alt="Image description" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Daily Journal</h3>
+									<div class="portfolio-item-desc">Javascript website for cataloging daily life of
+										software development</div>
+								</div>
+							</figcaption>
+						</figure>
+
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
+							data-groups="all JavaScript">
+							<a href="assets/images/aquarium.png" itemprop="contentUrl" data-size="1024x1024">
+								<img src="assets/images/aquarium.png" itemprop="thumbnail" alt="Image description" />
+							</a>
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Martin's Aquarium</h3>
+									<div class="portfolio-item-desc">JavaScript Project for Martin, fictional client
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+
+					</div><!-- .projects-container -->
+				</div>
+			</div>
+		</section>
+		<!-- END: PORTFOLIO -->
+
+		<!-- START: TESTIMONY
+				<section class="section section-dark section-testimony" id="testimony">
 					<div class="container">
 						<div class="section-head text-center">
 							<span>Kind Words</span>
@@ -755,170 +882,98 @@
 				</section> --> 
 				<!-- END: TESTIMONY -->
 
-				<!-- START: RESUME -->
-				<section class="section section-resume" id="resume">
-					<div class="container">
+		<!-- START: RESUME -->
+		<section class="section section-resume" id="resume">
+			<div class="container">
 
-						<div class="section-head">
-							<span>experience</span>
-							<h2>Resume</h2>
-						</div>
-						<div class="section-inner p-0 p-md-5">
-							<div class="section-resume-wrap">
-								<div class="section-experience mb-5">
-									<div class="row">
-										<div class="col-lg-3">
-											<h5 class="section-subHead mb-4 ">Work History</h5>
-										</div>
+				<div class="section-head">
+					<span>experience</span>
+					<h2>Resume</h2>
+				</div>
+				<div class="section-inner p-0 p-md-5">
+					<div class="section-resume-wrap">
+						<div class="section-experience mb-5">
+							<div class="row">
+								<div class="col-lg-3">
+									<h5 class="section-subHead mb-4 ">Work History</h5>
+								</div>
 
-										<div class="col-lg-9">
-											<div class="ExperienceList pb-3">
+								<div class="col-lg-9">
+									<div class="ExperienceList pb-3">
 
-												<div class="resume-list b-box p-4 ">
-													<div class="row align-items-center">
-														<div class="col-3 col-md-3 pb-3 pb-md-0">
-															Nashville Software School
-														</div>
-														<div class="col-md-8 pb-2 pb-md-0">
-															<h5 class="mb-3">Full Stack Software Developer</h5>
-															<h6 class="badge badge-primary">2015 - Present</h6>
-															<li>Built single-page applications in teams and individually
-																to create various CRUD web applications</li>
-															<li>Created Feeling Heart:  an individual front end capstone
-																in a 2 week sprint</li>
-															<li>Git and GitHub for version control, project management
-															</li>
-															<li>Practiced agile methodology/ participated in daily
-																stand-ups and sprint retrospectives</li>
-															<li>Experience in remote collaboration, learning,
-																problem-solving (via zoom, VS Code live-share, slack)
-															</li>
-															<li>Experience structuring workflow & wire-framing front end
-																projects</li>
-															<li>Application design through white-boarding dependencies
-																and building ERDs </li>
-
-
-														</div>
-													</div>
+										<div class="resume-list b-box p-4 ">
+											<div class="row align-items-center">
+												<div class="col-3 col-md-3 pb-3 pb-md-0">
+													Nashville Software School
 												</div>
-												<div class="resume-list b-box p-4 ">
-													<div class="row align-items-center">
-														<div class="col-3 col-md-3 pb-3 pb-md-0">
-															Sarah Hart Art
-														</div>
-														<div class="col-md-8 pb-2 pb-md-0">
-															<h5 class="mb-3">Abstract Artist, Graphic Designer,
-																Photographer
-																<h6 class="badge badge-danger">2015 - present</h6>
-															</h5>
-															<li>Published "Feeling Heart" : a 16 emotions feelings chart
-																represented through abstract art (2019)</li>
-															<li>"Feeling Heart" painting lessons (my own artistic
-																technique honed over 6 years) </li>
-															<li>Provide painting lessons to businesses, organizations &
-																corporations for team-building exercises </li>
-															<li>Created album art for various Nashville musicians</li>
-															<li>"Feeling Heart" solo show (October-December 2019) at The
-																Browsing Room Gallery </li>
-															<li>"Emotional Landscapes" solo show (November 2019) at Lab
-																Canna </li>
-															<li>Group shows : The Gallery at Fort Houston, Fieldhouse
-																Jones, The Porch, Turnip Green </li>
-														</div>
-													</div>
-												</div>
-												<div class="resume-list b-box p-4 ">
-													<div class="row align-items-center">
-														<div class="col-3 col-md-3 pb-3 pb-md-0">
-															University of Kentucky
-														</div>
-														<div class="col-md-8 pb-3 pb-md-0">
-															<h5 class="mb-3">French Instructor
-																<h6 class="badge badge-success">2015 - 2018</h6>
-															</h5>
-															<li>Taught 4 introductory French classes each semester</li>
-															<li>Responsible for around 100 students each semester</li>
-															<li>Recruited students to become French Majors or Minors
-															</li>
-															<li>Redesigned a 4th semester French language course
-																centered around the novel "The Little Prince" that has
-																continued to be taught by other TAs and FTIs</li>
-															<li>Created visually appealing content based on realia
-																(lesson plans, activities, quizzes)</li>
-															<li>Mentored first year French Teaching Assistants</li>
-														</div>
-													</div>
+												<div class="col-md-8 pb-2 pb-md-0">
+													<h5 class="mb-3">Full Stack Software Developer</h5>
+													<h6 class="badge badge-primary">2015 - Present</h6>
+													<li>Built single-page applications in teams and individually
+														to create various CRUD web applications</li>
+													<li>Created Feeling Heart:  an individual front end capstone
+														in a 2 week sprint</li>
+													<li>Git and GitHub for version control, project management
+													</li>
+													<li>Practiced agile methodology/ participated in daily
+														stand-ups and sprint retrospectives</li>
+													<li>Experience in remote collaboration, learning,
+														problem-solving (via zoom, VS Code live-share, slack)
+													</li>
+													<li>Experience structuring workflow & wire-framing front end
+														projects</li>
+													<li>Application design through white-boarding dependencies
+														and building ERDs </li>
+
+
 												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-
-								<div class="section-inner p-0 p-md-5">
-									<div class="section-resume-wrap">
-										<div class="section-experience mb-5">
-											<div class="row">
-												<div class="col-lg-3">
-													<h5 class="section-subHead mb-4 ">Education</h5>
+										<div class="resume-list b-box p-4 ">
+											<div class="row align-items-center">
+												<div class="col-3 col-md-3 pb-3 pb-md-0">
+													Sarah Hart Art
 												</div>
-
-												<div class="col-lg-9">
-													<div class="ExperienceList pb-3">
-
-														<div class="resume-list b-box p-4 ">
-															<div class="row align-items-center">
-																<div class="col-3 col-md-3 pb-3 pb-md-0">
-																	Nashville Software School </div>
-																<div class="col-md-5 pb-2 pb-md-0">
-																	<h5 class="mb-3">Software Development, Certificate
-																	</h5>
-																	<p>Full-time 6-month intensive full stack software
-																		development bootcamp focused on front end (HTML,
-																		JavaScript, React) and back end (.NET, C#, SQL
-																		server) fundamentals with an emphasis on problem
-																		solving and working in teams.</p>
-																</div>
-																<div class="col-md-4 text-md-right">
-																	<h6 class="badge badge-primary">Feb 2020 -
-																		Present</h6>
-																</div>
-
-															</div>
-														</div>
-														<div class="resume-list b-box p-4 ">
-															<div class="row align-items-center">
-																<div class="col-3 col-md-3 pb-3 pb-md-0">
-																	University of Kentucky
-																</div>
-																<div class="col-md-5 pb-2 pb-md-0">
-																	<h5 class="mb-3">MA, French & Francophone Language,
-																		Culture, & Literature </h5>
-																	<p>4.0 GPA, Summa Cum Laude.</p>
-																</div>
-																<div class="col-md-4 text-md-right">
-																	<h6 class="badge badge-success">2011 - 2013</h6>
-																</div>
-
-															</div>
-														</div>
-														<div class="resume-list b-box p-4 ">
-															<div class="row align-items-center">
-																<div class="col-3 col-md-3 pb-3 pb-md-0">
-																	Murray State University
-																</div>
-																<div class="col-md-5 pb-2 pb-md-0">
-																	<h5 class="mb-3">BA, International Affairs & French
-																	</h5>
-																	<p>3.8 GPA, Summa Cum Laude.</p>
-																</div>
-																<div class="col-md-4 text-md-right">
-																	<h6 class="badge badge-danger">2011 - 2013</h6>
-																</div>
-
-															</div>
-														</div>
-													</div>
+												<div class="col-md-8 pb-2 pb-md-0">
+													<h5 class="mb-3">Abstract Artist, Graphic Designer,
+														Photographer
+														<h6 class="badge badge-danger">2015 - present</h6>
+													</h5>
+													<li>Published "Feeling Heart" : a 16 emotions feelings chart
+														represented through abstract art (2019)</li>
+													<li>"Feeling Heart" painting lessons (my own artistic
+														technique honed over 6 years) </li>
+													<li>Provide painting lessons to businesses, organizations &
+														corporations for team-building exercises </li>
+													<li>Created album art for various Nashville musicians</li>
+													<li>"Feeling Heart" solo show (October-December 2019) at The
+														Browsing Room Gallery </li>
+													<li>"Emotional Landscapes" solo show (November 2019) at Lab
+														Canna </li>
+													<li>Group shows : The Gallery at Fort Houston, Fieldhouse
+														Jones, The Porch, Turnip Green </li>
+												</div>
+											</div>
+										</div>
+										<div class="resume-list b-box p-4 ">
+											<div class="row align-items-center">
+												<div class="col-3 col-md-3 pb-3 pb-md-0">
+													University of Kentucky
+												</div>
+												<div class="col-md-8 pb-3 pb-md-0">
+													<h5 class="mb-3">French Instructor
+														<h6 class="badge badge-success">2015 - 2018</h6>
+													</h5>
+													<li>Taught 4 introductory French classes each semester</li>
+													<li>Responsible for around 100 students each semester</li>
+													<li>Recruited students to become French Majors or Minors
+													</li>
+													<li>Redesigned a 4th semester French language course
+														centered around the novel "The Little Prince" that has
+														continued to be taught by other TAs and FTIs</li>
+													<li>Created visually appealing content based on realia
+														(lesson plans, activities, quizzes)</li>
+													<li>Mentored first year French Teaching Assistants</li>
 												</div>
 											</div>
 										</div>
@@ -927,12 +982,84 @@
 							</div>
 						</div>
 
-					</div>
-				</section>
-				<!-- END: RESUME -->
+						<div class="section-inner p-0 p-md-5">
+							<div class="section-resume-wrap">
+								<div class="section-experience mb-5">
+									<div class="row">
+										<div class="col-lg-3">
+											<h5 class="section-subHead mb-4 ">Education</h5>
+										</div>
 
-				<!-- START: BLOG -->
-				<!-- <section class="section" id="blog">
+										<div class="col-lg-9">
+											<div class="ExperienceList pb-3">
+
+												<div class="resume-list b-box p-4 ">
+													<div class="row align-items-center">
+														<div class="col-3 col-md-3 pb-3 pb-md-0">
+															Nashville Software School </div>
+														<div class="col-md-5 pb-2 pb-md-0">
+															<h5 class="mb-3">Software Development, Certificate
+															</h5>
+															<p>Full-time 6-month intensive full stack software
+																development bootcamp focused on front end (HTML,
+																JavaScript, React) and back end (.NET, C#, SQL
+																server) fundamentals with an emphasis on problem
+																solving and working in teams.</p>
+														</div>
+														<div class="col-md-4 text-md-right">
+															<h6 class="badge badge-primary">Feb 2020 -
+																Present</h6>
+														</div>
+
+													</div>
+												</div>
+												<div class="resume-list b-box p-4 ">
+													<div class="row align-items-center">
+														<div class="col-3 col-md-3 pb-3 pb-md-0">
+															University of Kentucky
+														</div>
+														<div class="col-md-5 pb-2 pb-md-0">
+															<h5 class="mb-3">MA, French & Francophone Language,
+																Culture, & Literature </h5>
+															<p>4.0 GPA, Summa Cum Laude.</p>
+														</div>
+														<div class="col-md-4 text-md-right">
+															<h6 class="badge badge-success">2011 - 2013</h6>
+														</div>
+
+													</div>
+												</div>
+												<div class="resume-list b-box p-4 ">
+													<div class="row align-items-center">
+														<div class="col-3 col-md-3 pb-3 pb-md-0">
+															Murray State University
+														</div>
+														<div class="col-md-5 pb-2 pb-md-0">
+															<h5 class="mb-3">BA, International Affairs & French
+															</h5>
+															<p>3.8 GPA, Summa Cum Laude.</p>
+														</div>
+														<div class="col-md-4 text-md-right">
+															<h6 class="badge badge-danger">2011 - 2013</h6>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- END: RESUME -->
+
+		<!-- START: BLOG -->
+		<!-- <section class="section" id="blog">
 					<div class="container">
 						<div class="section-head">
 							<span>BLOG</span>
@@ -1010,81 +1137,85 @@
 
 
 			</div>
+		</section>
+		<!-- END: CONTACT -->
+
+	</div>
 
 
-			<!-- Root element of PhotoSwipe. Must have class pswp. -->
-			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-				<!-- Background of PhotoSwipe. 
+		<!-- Background of PhotoSwipe. 
          It's a separate element, as animating opacity is faster than rgba(). -->
-				<div class="pswp__bg"></div>
+		<div class="pswp__bg"></div>
 
-				<!-- Slides wrapper with overflow:hidden. -->
-				<div class="pswp__scroll-wrap">
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
 
-					<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-					<!-- don't modify these 3 pswp__item elements, data is added later on. -->
-					<div class="pswp__container">
-						<div class="pswp__item"></div>
-						<div class="pswp__item"></div>
-						<div class="pswp__item"></div>
-					</div>
+			<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+			<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
 
-					<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-					<div class="pswp__ui pswp__ui--hidden">
-						<div class="pswp__top-bar">
-							<!--  Controls are self-explanatory. Order can be changed. -->
-							<div class="pswp__counter"></div>
-							<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-							<button class="pswp__button pswp__button--share" title="Share"></button>
-							<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-							<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<!--  Controls are self-explanatory. Order can be changed. -->
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-							<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-							<!-- element will get class pswp__preloader--active when preloader is running -->
-							<div class="pswp__preloader">
-								<div class="pswp__preloader__icn">
-									<div class="pswp__preloader__cut">
-										<div class="pswp__preloader__donut"></div>
-									</div>
-								</div>
+					<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+					<!-- element will get class pswp__preloader--active when preloader is running -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
 							</div>
-						</div>
-
-						<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-							<div class="pswp__share-tooltip"></div>
-						</div>
-
-						<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-						</button>
-
-						<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-						</button>
-
-						<div class="pswp__caption">
-							<div class="pswp__caption__center"></div>
 						</div>
 					</div>
 				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
 			</div>
+		</div>
+	</div>
 
-			<!-- JAVASCRIPTS -->
+	<!-- JAVASCRIPTS -->
 
-			<script src="assets/js/vendor.js"></script>
-			<script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+	<script src="assets/js/vendor.js"></script>
+	<script src="assets/plugins/js/jquery.fancybox.min.js"></script>
 
-			<script src="assets/js/parallax.min.js"></script>
-			<script src="assets/js/photoswipe.min.js"></script>
-			<script src="assets/js/photoswipe-ui-default.min.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/photoswipe.min.js"></script>
+	<script src="assets/js/photoswipe-ui-default.min.js"></script>
 
 
-			<!-- Custom Js -->
-			<script src="assets/js/imagesloaded.pkgd.js"></script>
-			<script src="assets/js/jquery.shuffle.min.js"></script>
-			<script src="assets/js/custom-shuffle-init.js"></script>
-			<script src="assets/js/pswp.js"></script>
+	<!-- Custom Js -->
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.shuffle.min.js"></script>
+	<script src="assets/js/custom-shuffle-init.js"></script>
+	<script src="assets/js/pswp.js"></script>
 
-			<script src="assets/js/custom.js"></script>
+	<script src="assets/js/custom.js"></script>
 </body>
 
 </html>
