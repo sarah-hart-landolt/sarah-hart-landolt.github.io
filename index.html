@@ -438,68 +438,52 @@
 										More</button>
 	
 									<!-- Modal -->
-									<div class="modal fade" id="fhModal" role="dialog">
-										<div class="modal-dialog">
-	
-											<!-- Modal content-->
-											<div class="modal-content">
-												<div class="modal-header">
-													<H2 class="modalTitle">Feeling Heart</H2>
-													<button type="button" class="close"
-														data-dismiss="modal">&times;</button>
-												</div>
-												<div class="modal-body">
-													<div class="videoContainer">
-														<video width="426" height="240" autoplay controls>
-															<source src="images/petsVideo.mp4" type="video/mp4"> </video>
-	
-													</div>
-													<div class="modalHeader">
-														<a href="https://github.com/sarah-hart-landolt/Feeling-Heart-Chart" target="_blank"
-															class="btn button btn-block">View the Code</a>
-	
-													</div>
-													<div>
-														<p>Feeling Heart is an app created for clients of my art who want to customize their own Feeling Heart chart, instead of/ in addition to buying the standard version. In the process, this app helps promote emotional intelligence and a way to your inner world through color and shape instead of language alone</p>
-														<ul>
-															<li>Front end capstone project built in React using JSON server
-																</li>
-															<li>Full CRUD functionality allows users to maintain saved charts
-															</li>
-														</ul>
-													</div>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default"
-														data-dismiss="modal">Close</button>
-												</div>
-											</div>
-	
-										</div>
+					<div class="modal fade" id="FeelingHeartModal" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<H2 class="modalTitle">Feeling Heart</H2>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="videoContainer">
+										<video width="600" height="auto" autoplay controls>
+											<source src="" type="video/mp4">
+										</video>
+
 									</div>
-								</div> 
-					<div class="container">
-						<div class="row">
-							<div class="col-6 col-md-4">
-								<div class="section-head">
-									<span>TAKE A LOOK AT</span>
-									<h2>My Projects</h2>
+									<div class="modalHeader">
+
+									</div>
+									<div>
+										<br>
+										<p>Feeling Heart is an app created for clients of my art who want to customize
+											their own Feeling Heart chart, instead of/ in addition to buying the
+											standard version. In the process, this app helps promote emotional
+											intelligence and a way to your inner world through color and shape instead
+											of language alone.</p>
+										<br>
+										<ul>
+											<li>Front end capstone project built in React using JSON server
+												to store user, saved chart data and purchased products.</li>
+											<li>Full CRUD functionality allows users to maintain saved Feeling Heart
+												Charts.
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a href="https://github.com/sarah-hart-landolt/Feeling-Heart-Chart" target="_blank"
+										class="btn button">View the Code</a>
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 								</div>
 							</div>
-							<div class="col-md-8">
-								<ul id="filter" class="filter mt-4">
-									<li class=" active" data-group="all">All</li>
-									<li class="" data-group="JavaScript">JavaScript</li>
-									<li class="" data-group="React">React</li>
-									<li class="" data-group="C#">C#</li>
-									<li class="" data-group=".NET">.NET</li>
 
-
-								</ul>
-							</div>
 						</div>
 					</div>
-			</div> -->
+			</div> 
 			<div class="container">
 				<div class="row">
 					<div class="col-6 col-md-4">
@@ -513,143 +497,27 @@
 							<li class=" active" data-group="all">All</li>
 							<li class="" data-group="JavaScript">JavaScript</li>
 							<li class="" data-group="React">React</li>
+							<li class="" data-group="C#">C#</li>
+							<li class="" data-group=".NET">.NET</li>
+
+
 						</ul>
 					</div>
 				</div>
 
-						<div class="section-inner p-0 p-md-5">
-							<div class="list-items-container row my-gallery">
+				<div class="section-inner p-0 p-md-5">
+					<div class="list-items-container row my-gallery">
 
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all React">
-									<!-- <a href="assets/images/FeelingHeartCapstone.png" itemprop="contentUrl" data-size="1024x1024"> -->
-										<img src="assets/images/FeelingHeartCapstone.png" itemprop="thumbnail"
-											alt="Image description" />
+						<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia" data-groups="all React">
+							<img src="assets/images/FeelingHeartCapstone.png" itemprop="thumbnail"
+								alt="Image description" />
 
-									<!-- </a> -->
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-												<h3 class="portfolio-item-title">Feeling Heart Capstone Project</h3>
-												<div class="portfolio-item-desc">React App to customize feeling charts with art</div>
-											</a>
-											<button type="button" data-toggle="modal" data-target="#fhModal"
-											class="btn btn-outline-secondary btn-lg" id="myBtn">Learn
-											More</button>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all React">
-									<a href="assets/images/nashville kennels.png" itemprop="contentUrl"
-										data-size="1024x1024">
-										<img src="assets/images/nashville kennels.png" itemprop="thumbnail"
-											alt="nasvhille kennels website" />
-									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Nashville Kennels</h3>
-											<div class="portfolio-item-desc">React App</div>
-											<a href="https://github.com/sarah-hart-landolt/Feeling-Heart-Chart" target="_blank"
-															class="btn button btn-block">View the Code
-											<button type="button" 
-											class="btn btn-outline-secondary btn-lg" id="myBtn">View
-											Code</button>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all JavaScript">
-									<a href="assets/images/nutshell.png" itemprop="contentUrl" data-size="1024x1024">
-										<img src="assets/images/nutshell.png" itemprop="thumbnail"
-											alt="nutshell website" />
-									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Nutshell Social Dashboard</h3>
-											<div class="portfolio-item-desc">JavaScript Wbsi</div>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all React">
-									<a href="assets/images/kandy korner.png" itemprop="contentUrl"
-										data-size="1024x1024">
-										<img src="assets/images/kandy korner.png" itemprop="thumbnail"
-											alt="Kandy Korner Website" />
-									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Kandy Korner</h3>
-											<div class="portfolio-item-desc">React</div>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all JavaScript">
-									<a href="assets/images/3.png" itemprop="contentUrl" data-size="1024x1024">
-										<img src="assets/images/3.png" itemprop="thumbnail"
-											alt="3 blind mice website" />
-									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">3 Blind Mice Consulting</h3>
-											<div class="portfolio-item-desc">Javascript</div>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all JavaScript">
-									<a href="assets/images/holidayroad.png" itemprop="contentUrl" data-size="1024x1024">
-										<img src="assets/images/holidayroad.png" itemprop="thumbnail"
-											alt="Image description" />
-									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Holiday Road</h3>
-											<div class="portfolio-item-desc">JavaScript Group Project</div>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all JavaScript">
-									<a href="assets/images/glassdale.png" itemprop="contentUrl" data-size="1024x1024">
-										<img src="assets/images/glassdale.png" itemprop="thumbnail"
-											alt="Image description" />
-									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Glassdale PD</h3>
-											<div class="portfolio-item-desc">JavaScript Project to help solve a crime</div>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all JavaScript">
-									<a href="assets/images/dailyjournal.png" itemprop="contentUrl"
-										data-size="1024x1024">
-										<img src="assets/images/dailyjournal.png" itemprop="thumbnail"
-											alt="Image description" />
-									</a>
-									<figcaption itemprop="caption description">
-										<div class="caption-inner">
-											<h3 class="portfolio-item-title">Daily Journal</h3>
-											<div class="portfolio-item-desc">Javascript website for cataloging daily life of software development</div>
-										</div>
-									</figcaption>
-								</figure>
-
-								<figure class="col-6 col-md-4 list-item" itemprop="associatedMedia"
-									data-groups="all JavaScript">
-									<a href="assets/images/aquarium.png" itemprop="contentUrl" data-size="1024x1024">
-										<img src="assets/images/aquarium.png" itemprop="thumbnail"
-											alt="Image description" />
+							<!-- </a> -->
+							<figcaption itemprop="caption description">
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Feeling Heart Capstone Project</h3>
+									<div class="portfolio-item-desc">React App to customize feeling charts with art
+									</div>
 									</a>
 									<button type="button" data-toggle="modal" data-target="#FeelingHeartModal"
 										class="btn btn-outline-secondary btn-lg" id="myBtn">Learn
